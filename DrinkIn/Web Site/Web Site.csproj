@@ -208,12 +208,21 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\w3.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Media\general_background.jpg" />
+    <Content Include="Media\beer_and_friends.jpg" />
+    <Content Include="Media\beer_on_desk.jpg" />
+    <Content Include="Media\chat-icon.png" />
+    <Content Include="Media\dcn-icon.png" />
+    <Content Include="Media\fastswap-icon.png" />
+    <Content Include="Media\gamepad-icon.png" />
+    <Content Include="Media\location-icon.png" />
+    <Content Include="Media\lock-icon.png" />
     <Content Include="Media\logo.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -273,8 +282,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
