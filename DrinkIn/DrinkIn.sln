@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Site", "Web Site\Web Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Library", "Class Library\Class Library.csproj", "{2C89AEE9-70BB-4E35-A333-4EEA42632ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEmailClient", "TestEmailClient\TestEmailClient.csproj", "{36294368-65AD-42B6-B600-FAD8AA9825A3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{2C89AEE9-70BB-4E35-A333-4EEA42632ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C89AEE9-70BB-4E35-A333-4EEA42632ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C89AEE9-70BB-4E35-A333-4EEA42632ED2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36294368-65AD-42B6-B600-FAD8AA9825A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36294368-65AD-42B6-B600-FAD8AA9825A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36294368-65AD-42B6-B600-FAD8AA9825A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36294368-65AD-42B6-B600-FAD8AA9825A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
