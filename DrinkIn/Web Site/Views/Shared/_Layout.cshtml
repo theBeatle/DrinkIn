@@ -6,13 +6,14 @@
     <title>@ViewBag.Title - DrinkIn</title>
     <script src="~/Scripts/Custom/JavaScript.js"></script>
     <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/Custom/css")
     <style>
-        body {
+        /*body {
             background: url("../../Media/general_background.jpg");
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -26,8 +27,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 @*<li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-        <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-        <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>*@
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>*@
 
                 <li class="nav-item"><a href="#network" class="nav-link hvr-underline-from-center">What is it?</a></li>
                 <li class="nav-item"><a href="#usability" class="nav-link hvr-underline-from-center">Usability</a></li>
@@ -39,13 +40,13 @@
         </div>
     </nav>
 
-    <div class="container body-content">
+    <div class="" style="background: rgba(255, 106, 0, 0.1)">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+    <footer style="text-align: center;">
+        <p>&copy; @DateTime.Now.Year - DrinkIn. All rights reserved</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
