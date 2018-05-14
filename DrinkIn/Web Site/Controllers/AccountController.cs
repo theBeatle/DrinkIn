@@ -315,6 +315,8 @@ namespace Web_Site.Controllers
                 return View("Error");
             }
             return RedirectToAction("VerifyCode", new { Provider = model.SelectedProvider, ReturnUrl = model.ReturnUrl, RememberMe = model.RememberMe });
+            //var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+
         }
 
         //
@@ -380,7 +382,7 @@ namespace Web_Site.Controllers
                 }
                 AddErrors(result);
             }
-
+            
             ViewBag.ReturnUrl = returnUrl;
             return View(model);
         }
