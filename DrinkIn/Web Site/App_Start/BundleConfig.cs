@@ -26,6 +26,15 @@ namespace Web_Site
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Custom/css").Include(
+                     "~/Content/Custom/beer2048.css",
+                      "~/Content/Custom/styles.css",
+                     "~/Content/Custom/hover.css",
+                     "~/Content/Custom/navbar.css",
+                     "~/Content/Custom/map.css",
+                     "~/Content/Custom/fastslide.css",
+                     "~/Content/Site.css"));
         }
     }
 }

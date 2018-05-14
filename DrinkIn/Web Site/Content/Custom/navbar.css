@@ -1,0 +1,239 @@
+/* 
+    
+    ****
+    *   *
+    *   *
+    ****
+
+
+    h1 {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+} */
+
+/* h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+} */
+
+/* a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #42DCA3;
+} */
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+#mainNav {
+    /*font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: whitesmoke;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: black;
+    border: 1px solid black;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700;
+}
+
+#mainNav .nav-item {
+        color: orangered;
+        margin-right: 5px;
+    }
+
+#mainNav .navbar-nav .nav-item {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: orangered;
+    outline: none;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.btn-circle {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.btn-circle:focus,
+.btn-circle:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.right-btn {
+    color: whitesmoke;
+    background: orangered;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 150px;
+}
+
+@media (min-width: 992px) {
+
+    .right-btn {
+        color: whitesmoke;
+        background: orangered;
+        font-size: 20px;
+        margin-left: 20px;
+        letter-spacing: 1px;
+        width: 150px;
+        display: inline-block;
+        position: relative;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    .right-btn:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: whitesmoke;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .right-btn:hover,
+    .right-btn:focus,
+    .right-btn:active {
+        color: orangered;
+    }
+    .right-btn:hover:before,
+    .right-btn:focus:before,
+    .right-btn:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+   
+    #mainNav {
+        padding-top: 15px 20px 15px 45px;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background-color: whitesmoke;
+    }
+    .navbar-collapse {
+        margin-left: 15%;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: whitesmoke;
+    }
+    #mainNav .nav-link.active {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    #mainNav .nav-link.active:hover {
+        color: white;
+    }
+    #mainNav .nav-item {
+        color: orangered;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
+
+/*need an additional setting form any screen*/
+
+.masthead {
+    display: table;
+    width: 100%;
+    height: 91%;
+    color: white;
+    background: url("https://image.ibb.co/go7Nhx/index_background.jpg") no-repeat top center;
+    background-size: cover;
+    background-color: black;
+}
+
+.masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 100px;
+    padding-right: 200px;
+}
+
+.masthead #carousel {
+    padding-top: 80px;
+}
+
+.masthead #carousel div {
+    height: 700px;
+}
+
+#nav-img {
+    height: 60px;
+    margin: -5px;
+    width: auto;
+}
+
+
