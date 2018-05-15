@@ -1,0 +1,26 @@
+﻿body{
+    background: url("../Media/food.png");
+    background-attachment: fixed;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.bgimg-1{
+    background-image: url("../Media/beer_on_desk.jpg");
+    min-height: 500px;
+}
+
+.bgimg-2 {
+    background-image: url("../Media/beer_and_friends.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("../Media/night_street.jpg");
+    min-height: 400px;
+}
