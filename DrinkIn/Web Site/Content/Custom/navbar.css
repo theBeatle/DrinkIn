@@ -103,7 +103,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.btn {
+/*.btn {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 200;
     -webkit-transition: all 0.3s ease-in-out;
@@ -111,7 +111,7 @@ a:hover {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0;
-}
+}*/
 
 .right-btn {
     color: whitesmoke;
@@ -119,7 +119,9 @@ a:hover {
     font-size: 18px;
     letter-spacing: 1px;
     width: 150px;
+    border: 1px whitesmoke solid;
 }
+
 
 @media (min-width: 992px) {
 
