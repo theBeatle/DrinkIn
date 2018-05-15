@@ -222,15 +222,18 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Media\animation.mp4" />
     <Content Include="Media\beer_and_friends.jpg" />
     <Content Include="Media\beer_on_desk.jpg" />
     <Content Include="Media\chat-icon.png" />
     <Content Include="Media\dcn-icon.png" />
     <Content Include="Media\fastswap-icon.png" />
+    <Content Include="Media\food.png" />
     <Content Include="Media\gamepad-icon.png" />
     <Content Include="Media\location-icon.png" />
     <Content Include="Media\lock-icon.png" />
     <Content Include="Media\logo.png" />
+    <Content Include="Media\night_street.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
