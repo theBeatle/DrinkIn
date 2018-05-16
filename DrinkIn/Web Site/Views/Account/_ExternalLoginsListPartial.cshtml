@@ -4,7 +4,8 @@
 @*<h4>Use another service to log in.</h4>*@
 <h4 style="text-align: center" class="text-white">With another service</h4>
 <hr />
-@{
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+@*@{
     var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
     if (loginProviders.Count() == 0) {
         <div>
@@ -26,4 +27,4 @@
             </div>
         }
     }
-}
+}*@

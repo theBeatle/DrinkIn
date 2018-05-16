@@ -7,6 +7,12 @@
     <script src="~/Scripts/Custom/JavaScript.js"></script>
     <script src="~/Scripts/jquery-3.3.1.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
+
+    @if (ViewBag.IsIndexView == true)
+    {
+
+    }
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/Custom/css")
@@ -22,90 +28,61 @@
     }
 </head>
 <body>
-    @if (ViewBag.Transparent == true)
-    {
 
-        <!--< nav class="navbar navbar-expand-lg" id="mainNav" style="background: rgba(255, 106, 0, 0.1)">-->
-        <nav class="navbar navbar-expand-lg bg-transparent" id="mainNav">
-            <a class="navbar-brand" href="~/">
-                <img id="nav-img" src="~/Media/logo.png">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right btn btn-circle" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
+    <!--Дороу, sooqa
 
-            <div class="collapse navbar-collapse">
-                <h2 style="text-align: center;" class="text-white">Log In to profile</h2>
-            </div>
-            <!--<div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mr-auto">
-                    @*<li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>*@
+    yo bitcj!
+    are you ahueli tam?
 
 
+    nope
+  ______ ____  _      _      ______          __  _____          __  __ _   _   _______ _____            _____ _   _      _____     _ _ 
+ |  ____/ __ \| |    | |    / __ \ \        / / |  __ \   /\   |  \/  | \ | | |__   __|  __ \     /\   |_   _| \ | |    / ____|   | | |
+ | |__ | |  | | |    | |   | |  | \ \  /\  / /  | |  | | /  \  | \  / |  \| |    | |  | |__) |   /  \    | | |  \| |   | |        | | |
+ |  __|| |  | | |    | |   | |  | |\ \/  \/ /   | |  | |/ /\ \ | |\/| | . ` |    | |  |  _  /   / /\ \   | | | . ` |   | |    _   | | | 
+ | |   | |__| | |____| |___| |__| | \  /\  /    | |__| / ____ \| |  | | |\  |    | |  | | \ \  / ____ \ _| |_| |\  |_  | |___| |__| |_|
+ |_|    \____/|______|______\____/   \/  \/     |_____/_/    \_\_|  |_|_| \_|    |_|  |_|  \_\/_/    \_\_____|_| \_( )  \_____\____/(_)
+                                                                                                                   |/                  
+                                                                                           _____ _    _ _____  ______ _  __
+                                                                                          / ____| |  | |  __ \|  ____| |/ /  
+                                                                                         | (___ | |__| | |__) | |__  | ' / 
+                                                                                          \___ \|  __  |  _  /|  __| |  <  
+                                                                                          ____) | |  | | | \ \| |____| . \ 
+                                                                                         |_____/|_|  |_|_|  \_\______|_|\_\
+                           _________________________
+                          /                         |
+                          |    KEK                  |
+                          |   Somebody once told me /
+                          |                        /
+        *          *      |   ____________________/
+       ***        ***    /   /
+     ___\\________//___  \  /
+    /                  \ / /
+    |                   ||/
+    |   _        _      |
+    |  |_|      |_|     |                  <------------------------- SHREK             
+    |       ==          |                                             
+    \     -------      /                                              
+     \                /                                               
+      \--------------/                                               
 
-                    <li class="nav-item"><a href="#network" class="nav-link hvr-underline-from-center">Home</a></li>
+        -->
 
-                </ul>
-            </div>-->
-        </nav>
-        <hr />
-    }
-    else if (ViewBag.MapView == true)
-    {
-        <!--< nav class="navbar navbar-expand-lg" id="mainNav" style="background: rgba(255, 106, 0, 0.1)">-->
-        <nav class="navbar navbar-expand-lg bg-transparent" id="mainNav">
-            <a class="navbar-brand" href="~/">
-                <img id="nav-img" src="~/Media/logo.png">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right btn btn-circle" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
+    <!-- Navigation bar -->
+    @Html.Partial("Partials/_NavbarPartial")
 
-            <div class="collapse navbar-collapse">
-                <h2 style="text-align: center;" class="text-white">Some menu items here</h2>
-            </div>
-        </nav>
-    }
-    else
-    {
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNav" style="position: fixed; overflow: hidden; top: 0; width: 100%; z-index: 100">
-            <a class="navbar-brand" href="~/">
-                <img id="nav-img" src="~/Media/logo.png">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right btn btn-circle" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mr-auto">
-                    @*<li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-                        <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>
-                        <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link hvr-underline-from-center" })</li>*@
+    <!-- Partial body -->
+    @RenderBody()
+    <hr />
+@*-------------------------------------------------------------
 
-                    <li class="nav-item"><a href="#network" class="nav-link hvr-underline-from-center">What is it?</a></li>
-                    <li class="nav-item"><a href="#usability" class="nav-link hvr-underline-from-center">Usability</a></li>
-                    <li class="nav-item"><a href="#features" class="nav-link hvr-underline-from-center">Features</a></li>
-                    <li class="nav-item"><a href="#joinus" class="nav-link hvr-underline-from-center">Join us</a></li>
-
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </nav>
-    }
+       333------
+    33333333
+    00 00 00*@
 
 
-
-    @*<div class="">*@
-        @RenderBody()
-        <hr />
-    @*</div>*@
-    <footer style="text-align: center;">
-        <p>&copy; @DateTime.Now.Year - DrinkIn. All rights reserved</p>
-    </footer>
+    <!-- Footer of the page-->
+    @Html.Partial("Partials/_FooterPartial")
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
