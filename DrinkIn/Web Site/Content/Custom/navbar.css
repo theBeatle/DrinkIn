@@ -46,6 +46,9 @@ a:hover {
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background-color: whitesmoke;
+    position: fixed;
+    z-index: 1002;
+    width: 100%;
 }
 
 #mainNav .navbar-toggler {

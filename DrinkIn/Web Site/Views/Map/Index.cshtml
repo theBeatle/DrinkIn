@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+}
+
+<div id="myMap">    </div>
+<button id='btn-for-filters'><img id="btn-for-filters-image" src='images/filter.png'/></button>
+<div id="filters">
+    <div id="visibility-filter-div">
+        <div class="title-sidebar">Filters</div>
+        <div class="group-of-filters">
+            <span>Radio Buttons</span>
+            <div>
+                <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+                <label for="radio-1" class="radio-custom-label">First Choice</label>
+            </div>
+            <div>
+                <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                <label for="radio-2" class="radio-custom-label">Second Choice</label>
+            </div>
+            <div>
+                <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                <label for="radio-3" class="radio-custom-label">Third Choice</label>
+            </div>
+        </div>
+        <div class="group-of-filters">
+            <span>Checkboxes</span>
+            <div>
+                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                <label for="checkbox-1" class="checkbox-custom-label">First Choice</label>
+            </div>
+            <div>
+                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                <label for="checkbox-2" class="checkbox-custom-label">Second Choice</label>
+            </div>
+            <div>
+                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
+                <label for="checkbox-3" class="checkbox-custom-label">Third Choice</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/Scripts/Custom/Map.js"></script>
