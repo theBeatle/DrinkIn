@@ -10,7 +10,7 @@ namespace Web_Site
         {
             bundles.Add(new ScriptBundle("~/Scripts/LibraryScripts").Include(
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/jquery-3.3.1.min.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/MapScripts").Include(
                         "~/Scripts/Custom/Map.js"));

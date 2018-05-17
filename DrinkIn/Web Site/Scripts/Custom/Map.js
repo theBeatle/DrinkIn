@@ -1,5 +1,8 @@
 ﻿var mapElem;
 var marker;
+
+var RadarCircle;
+
 window.onload = function () {
     if (document.querySelectorAll('#myMap').length > 0) {
         if (document.querySelector('html').lang)
@@ -44,7 +47,10 @@ function initMap() {
     google.maps.event.addListener(mapElem, 'click', function (event) {
         placeMarker(event.latLng);
     });
+
+
 }
+
 
 function placeMarker(location) {
     if (!marker) {
@@ -55,6 +61,22 @@ function placeMarker(location) {
             map: mapElem
         });
     } else {
+        if (RadarCircle != null) {
+            RadarCircle.setMap(null);
+        }
+
+        RadarCircle = new google.maps.Circle({
+            strokeColor: '#ED6D1A',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#ED6D1A',
+            fillOpacity: 0.35,
+            map: mapElem,
+            center: location,
+            radius: 1000
+        });
         marker.setPosition(location);
     }
 }
+
+
