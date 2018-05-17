@@ -21,7 +21,7 @@
 else if (ViewBag.IsMapView == true)
 {
     <!--< nav class="navbar navbar-expand-lg" id="mainNav" style="background: rgba(255, 106, 0, 0.1)">-->
-    <nav class="navbar navbar-expand-lg bg-transparent" id="mainNav">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
         <a class="navbar-brand" href="~/">
             <img id="nav-img" src="~/Media/logo.png">
         </a>
@@ -30,12 +30,19 @@ else if (ViewBag.IsMapView == true)
             <i class="fa fa-bars"></i>
         </button>
 
+            <h2 style="text-align: left;" class="text-black">Invoices map</h2>
+
         <div class="collapse navbar-collapse">
-            <h2 style="text-align: center;" class="text-white">Some menu items here</h2>
+            <ul class="navbar-nav mr-auto navbar-center">
+                <li class="nav-item"><a href="#network" class="nav-link hvr-underline-from-center">Chats</a></li>
+                <li class="nav-item"><a href="#usability" class="nav-link hvr-underline-from-center">Games</a></li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+
         </div>
     </nav>
 }
-else if(ViewBag.IsIndexView == true)
+else if (ViewBag.IsIndexView == true)
 {
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNav" style="position: fixed; overflow: hidden; top: 0; width: 100%; z-index: 100">
         <a class="navbar-brand" href="~/">

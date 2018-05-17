@@ -11,7 +11,7 @@ namespace Web_Site.Controllers
         // GET: Map
         public ActionResult Index()
         {
-            ViewBag.MapView = true;
+            ViewBag.IsMapView = true;
             return View();
         }
     }

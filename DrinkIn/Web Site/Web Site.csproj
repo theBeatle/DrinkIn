@@ -217,6 +217,7 @@
     </Content>
     <Content Include="Content\Custom\map.css" />
     <Content Include="Content\Custom\navbar.css" />
+    <Content Include="Content\Custom\panels.css" />
     <Content Include="Content\Custom\styles.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\w3.css" />
@@ -233,6 +234,9 @@
     <Content Include="Media\fastswap-icon.png" />
     <Content Include="Media\food.png" />
     <Content Include="Media\gamepad-icon.png" />
+    <Content Include="Media\Icons\chat_icon.png" />
+    <Content Include="Media\Icons\filter_icon.png" />
+    <Content Include="Media\Icons\profile_icon.png" />
     <Content Include="Media\location-icon.png" />
     <Content Include="Media\lock-icon.png" />
     <Content Include="Media\logo.png" />
@@ -332,6 +336,7 @@
     <Content Include="Views\Shared\Partials\_NavbarPartial.cshtml" />
     <Content Include="Views\Shared\Partials\_FooterPartial.cshtml" />
     <Content Include="Views\Map\Partials\_MapPartial.cshtml" />
+    <Content Include="Views\Map\Partials\_AccountModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,7 +11,7 @@ window.onload = function () {
         js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0X3csDslgOaMtIR6GNB9z7oY1GxZp2c&callback=initMap';
         document.getElementsByTagName('body')[0].appendChild(js_file);
     }
-    $('#btn-for-filters').click(function () {
+    $('#btn-filters').click(function () {
         if ($('#filters').width() == 0) {
             $(function () {
                 $('#filters').animate({

@@ -1,3 +1,31 @@
+@keyframes containerCloseAnimation {
+    0% {
+        top: 100px;
+    }
+
+    10% {
+        top: 120px;
+    }
+
+    100% {
+        top: -500px;
+    }
+}
+
+@keyframes containerOpenAnimation {
+    0% {
+        top: -500px;
+    }
+
+    90% {
+        top: 120px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
 #fastslide-container {
     left: 0;
     right: 0;
@@ -31,7 +59,7 @@
     background: url(../images/person-image.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .fast-slide-card-text {
@@ -40,6 +68,7 @@
 
 .fast-slide-card-subtext {
     font-family: Roboto;
+    color: white;
     font-size: 15pt;
     text-align: left;
     float: left;
@@ -54,6 +83,7 @@
 
 #fast-slide-card-name {
     font-family: Roboto;
+    color: white;
     font-size: 20pt;
     text-align: left;
     float: left;
@@ -89,6 +119,11 @@
     border: 0;
     outline: none;
 }
+
+/* .fast-slide-buttons:hover{
+    cursor: pointer;
+    background: lightblue;
+} */
 
 #fast-slide-open {
     background: blueviolet;

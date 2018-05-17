@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - DrinkIn</title>
-    <script src="~/Scripts/Custom/JavaScript.js"></script>
-    <script src="~/Scripts/jquery-3.3.1.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
+
+    @*Render some JQuery and Bootstrap scripts*@
+    @Scripts.Render("~/Scripts/LibraryScripts")
+
+    @Styles.Render("~/Content/css/GeneralStyles")
+
 
     @if (ViewBag.IsIndexView == true)
     {
-        @Styles.Render("~/Content/css/GeneralStyles")
     }
     else if (ViewBag.IsLoginView == true)
     {
-        @Styles.Render("~/Content/css/GeneralStyles");
-
         <style>
             body {
                 background: url('../../Media/night_street.jpg') no-repeat;
@@ -25,7 +25,18 @@
     }
     else if (ViewBag.IsMapView == true)
     {
+        @*Render scripts, that map need*@
+        @Scripts.Render("~/Scripts/MapScripts")
 
+        @Styles.Render("~/Content/css/MapStyles")
+        <style>
+            #mainNav {
+                position: fixed;
+                z-index: 1002;
+                width: 100%;
+                background: rgba(255,255,255,0.4);
+            }
+        </style>
     }
 </head>
 <body>
@@ -73,7 +84,6 @@
 
     <!-- Partial body -->
     @RenderBody()
-    <hr />
     @*-------------------------------------------------------------
 
            333------
@@ -81,8 +91,12 @@
         00 00 00*@
 
 
-    <!-- Footer of the page-->
-    @Html.Partial("Partials/_FooterPartial")
+    @if (ViewBag.IsMapView != true)
+    {
+        <hr />
+        <!-- Footer of the page-->
+        @Html.Partial("Partials/_FooterPartial")
+    }
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

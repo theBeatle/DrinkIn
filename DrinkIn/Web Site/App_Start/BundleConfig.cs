@@ -8,11 +8,12 @@ namespace Web_Site
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/LibraryScripts").Include(
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/jquery-3.3.1.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            bundles.Add(new ScriptBundle("~/Scripts/MapScripts").Include(
+                        "~/Scripts/Custom/Map.js"));
 
             bundles.Add(new StyleBundle("~/Content/css/GeneralStyles").Include(
                       "~/Content/bootstrap.min.css",
@@ -24,7 +25,8 @@ namespace Web_Site
                      "~/Content/Custom/hover.css",
                      "~/Content/Custom/navbar.css",
                      "~/Content/Custom/map.css",
-                     "~/Content/Custom/fastslide.css"));
+                     "~/Content/Custom/fastslide.css",
+                     "~/Content/Custom/panels.css"));
         }
     }
 }
