@@ -11,6 +11,7 @@ namespace Web_Site.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.IsIndexView = true;
             return View();
         }
 

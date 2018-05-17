@@ -212,6 +212,9 @@
     <Content Include="Content\Custom\beer2048.css" />
     <Content Include="Content\Custom\fastslide.css" />
     <Content Include="Content\Custom\hover.css" />
+    <Content Include="Content\Custom\hover.min.css">
+      <DependentUpon>hover.css</DependentUpon>
+    </Content>
     <Content Include="Content\Custom\map.css" />
     <Content Include="Content\Custom\navbar.css" />
     <Content Include="Content\Custom\styles.css" />
@@ -258,6 +261,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

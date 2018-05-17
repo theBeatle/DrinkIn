@@ -58,8 +58,7 @@ namespace Web_Site.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            ViewBag.Transparent = true;
-            ViewBag.LoginView = true;
+            ViewBag.IsLoginView = true;
             return View();
         }
 
