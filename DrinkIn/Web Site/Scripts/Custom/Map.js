@@ -26,21 +26,32 @@ window.onload = function () {
         js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCN0X3csDslgOaMtIR6GNB9z7oY1GxZp2c&callback=initMap';
         document.getElementsByTagName('body')[0].appendChild(js_file);
     }
+
     $('#btn-filters').click(function () {
-        if ($('#filters').width() == 0) {
+        if ($('#filters').position().left == -300) {
             $(function () {
+
                 $('#filters').animate({
-                    width: 200,
-                }, 500, function () {
+                    left: 0,
+                }, 400, function () {
                     $('#visibility-filter-div').css('display', 'inline');
-                });
+                    });
+
+                $('#btn-filters').animate({
+                    left: 250
+                }, 400);
+
             });
         } else {
             $('#visibility-filter-div').css('display', 'none');
             $(function () {
                 $("#filters").animate({
-                    width: 0,
-                }, 500);
+                    left: -300,
+                }, 400);
+
+                $('#btn-filters').animate({
+                    left: 0
+                }, 400);
             });
         }
     });
@@ -60,6 +71,10 @@ function initMap() {
         placeMarker(event.latLng);
     });
 
+    //Onload event
+    google.maps.event.addListenerOnce(mapElem, 'idle', function () {
+        document.getElementById("LoadingIndicator").innerHTML = "";
+    });
 
 }
 

@@ -55,21 +55,21 @@
 
 /*Sidebars*/
 #filters {
-    width: 0px;
-    height: 400px;
-    margin-top: 70px;
+    width: 250px;
+    height: 300px;
     float: left;
     background-color: #ED6D1A;
-    border-radius: 5px;
-    z-index: 1000;
-    top: 165px;
+    z-index: 3;
+    top: 150px;
     position: absolute;
-    left: 10px;
+    left: -300px;
+    padding: 20px;
+    border-bottom-right-radius: 15px;
 }
 
-#visibility-filter-div {
+/*#visibility-filter-div {
     display: none;
-}
+}*/
 
 .group-of-filters {
     margin-top: 10px;
