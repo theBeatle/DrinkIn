@@ -11,45 +11,54 @@
 
 <button id='btn-chats'><img id="btn-chats-image" src='~/Media/Icons/chat_icon.png'/></button>
 
-<div id="filters">
+<div class="text-white" id="filters" style="padding: 5px;">
     <div id="visibility-filter-div">
-        <div class="title-sidebar">Filters</div>
-        <div class="group-of-filters">
 
-            <span id="demo">Radius: </span>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="30" value="2" class="slider" id="myRange">
+        <h3 style="left: 10px; top: 10px;">Filters</h3>
+
+        <div class="container group-of-filters">
+
+            <div class="row">
+                <span id="demo">Radius: </span>
+
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="30" value="2" class="slider" id="myRange">
+                </div>
+            </div>
+            <!-- Gender selection -->
+            <div class="row" style="margin: auto;">
+                <span id="demo">Gender: </span>
+
+                <div class="btn-group btn-group-toggle" style="margin: auto" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        <input name="options" id="option1" type="radio" autocomplete="off">Male
+                    </label>
+                    <label class="btn btn-primary">
+                        <input name="options" id="option2" type="radio" checked="checked" autocomplete="off">Both
+                    </label>
+                    <label class="btn btn-primary">
+                        <input name="options" id="option3" type="radio" autocomplete="off">Female
+                    </label>
+                </div>
             </div>
 
-
-            <span>Radio Buttons</span>
+            <!-- Drinkset selection-->
             <div>
-                <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
-                <label for="radio-1" class="radio-custom-label">First Choice</label>
+                <span id="demo">Drinkset </span>
             </div>
-            <div>
-                <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
-                <label for="radio-2" class="radio-custom-label">Second Choice</label>
-            </div>
-            <div>
-                <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
-                <label for="radio-3" class="radio-custom-label">Third Choice</label>
-            </div>
+            @*<span>Radio Buttons</span>
+        <div>
+            <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+            <label for="radio-1" class="radio-custom-label">First Choice</label>
         </div>
-        <div class="group-of-filters">
-            <span>Checkboxes</span>
-            <div>
-                <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
-                <label for="checkbox-1" class="checkbox-custom-label">First Choice</label>
-            </div>
-            <div>
-                <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
-                <label for="checkbox-2" class="checkbox-custom-label">Second Choice</label>
-            </div>
-            <div>
-                <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
-                <label for="checkbox-3" class="checkbox-custom-label">Third Choice</label>
-            </div>
+        <div>
+            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+            <label for="radio-2" class="radio-custom-label">Second Choice</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+            <label for="radio-3" class="radio-custom-label">Third Choice</label>
+        </div>*@
         </div>
     </div>
 </div>

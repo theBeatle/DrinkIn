@@ -1,9 +1,19 @@
-﻿var mapElem;
+﻿//HTML Map element
+var mapElem;
+//Marker element
 var marker;
-
+//Orange radar circle on map
 var RadarCircle;
-var currentRadius = 1000;
+//Current radius, set on slider
+var currentRadius = 1;
+//Current location of the marker
 var markerLocation;
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; 
+
 
 window.onload = function () {
     if (document.querySelectorAll('#myMap').length > 0) {
@@ -36,7 +46,7 @@ window.onload = function () {
     });
 };
 
-
+//Map initializer
 function initMap() {
     var uluru = {
         lat: 50.619229,
@@ -53,7 +63,7 @@ function initMap() {
 
 }
 
-
+//Map click event handler
 function placeMarker(location) {
 
     markerLocation = location;
@@ -65,6 +75,22 @@ function placeMarker(location) {
             animation: google.maps.Animation.DROP,
             map: mapElem
         });
+
+        if (RadarCircle != null) {
+            RadarCircle.setMap(null);
+        }
+
+        RadarCircle = new google.maps.Circle({
+            strokeColor: '#ED6D1A',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#ED6D1A',
+            fillOpacity: 0.35,
+            map: mapElem,
+            center: markerLocation,
+            radius: currentRadius * 1000
+        });
+
     } else {
         if (RadarCircle != null) {
             RadarCircle.setMap(null);
@@ -78,43 +104,15 @@ function placeMarker(location) {
             fillOpacity: 0.35,
             map: mapElem,
             center: markerLocation,
-            radius: currentRadius
+            radius: currentRadius * 1000
         });
         marker.setPosition(location);
     }
 }
-
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function () {
     currentRadius = this.value;
     output.innerHTML = "Radius: " + currentRadius + "km";
     RadarCircle.setRadius(currentRadius * 1000);
-    //RadarCircle.center = markerLocation;
-
-    //RadarCircle.setMap(mapElem);
-
-    //if (RadarCircle != null) {
-    //    RadarCircle.setMap(null);
-    //}
-
-    //RadarCircle = new google.maps.Circle({
-    //    strokeColor: '#ED6D1A',
-    //    strokeOpacity: 0.8,
-    //    strokeWeight: 2,
-    //    fillColor: '#ED6D1A',
-    //    fillOpacity: 0.35,
-    //    map: mapElem,
-    //    center: markerLocation,
-    //    radius: RadarCircle.radius  
-    //});
-
-
-
-
-    console.log(RadarCircle.radius);
 } 
