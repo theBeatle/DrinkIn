@@ -1,14 +1,19 @@
 ﻿<!DOCTYPE html>
-<html>
+<html  prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - DrinkIn</title>
 
+    <meta property="og:title" content="DrinkIn" />
+    <meta property="og:url" content="drinkin.pp.ua" />
+    <meta property="og:description" content="The most advanced alcohol network" />
+    <meta property="og:image" content="Media/beer_on_desk _og.jpg"/>
+
     @*Render some JQuery and Bootstrap scripts*@
     @Scripts.Render("~/Scripts/LibraryScripts")
 
-    @Styles.Render("~/Content/css/GeneralStyles")
+    @Styles.Render("~/Content/GeneralStyles")
 
 
     @if (ViewBag.IsIndexView == true)
@@ -28,7 +33,7 @@
         @*Render scripts, that map need*@
         @Scripts.Render("~/Scripts/MapScripts")
 
-        @Styles.Render("~/Content/css/MapStyles")
+        @Styles.Render("~/Content/Custom/MapStyles")
         <style>
             #mainNav {
                 position: fixed;

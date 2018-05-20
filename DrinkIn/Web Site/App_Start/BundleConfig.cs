@@ -15,12 +15,12 @@ namespace Web_Site
             bundles.Add(new ScriptBundle("~/Scripts/MapScripts").Include(
                         "~/Scripts/Custom/Map.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css/GeneralStyles").Include(
+            bundles.Add(new StyleBundle("~/Content/GeneralStyles").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/Custom/navbar.css",
                       "~/Content/Site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/css/MapStyles").Include(
+            bundles.Add(new StyleBundle("~/Content/Custom/MapStyles").Include(
                      "~/Content/Custom/beer2048.css",
                      "~/Content/Custom/hover.css",
                      "~/Content/Custom/navbar.css",

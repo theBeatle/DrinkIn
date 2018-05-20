@@ -10,6 +10,7 @@
     border-bottom-right-radius: 10px;
     background-color: #ED6D1A;
     z-index: 2000;
+    cursor: pointer;
 }
 
     #btn-filters:active {
