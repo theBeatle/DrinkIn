@@ -131,3 +131,24 @@ slider.oninput = function () {
     output.innerHTML = "Radius: " + currentRadius + "km";
     RadarCircle.setRadius(currentRadius * 1000);
 } 
+
+
+function RunMapScan() {
+
+    for (var i = 0; i < 1000; i++) {
+
+        var Loc = {
+            lat: 50.619229 + i/5,
+            lng: 26.252085 + i/5
+        };
+
+        var PMarker = new google.maps.Marker({
+            position: Loc, 
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            map: mapElem
+        });
+
+        PMarker.setPosition(Loc);
+    }
+}
